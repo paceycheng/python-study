@@ -14,7 +14,7 @@ a = len(paragraph)
 print(a)
 
 
-# Q2: 把文章裡 'GraphQL' 這個單字變全大寫, 其餘單字變全小寫
+# Q2: 把文章裡 'GraphQL' 這個單字變全大寫, 其餘單字變全小寫 / 全部改為大寫，再轉換單字為小寫，在大小寫對調
 print('-----A2-----')
 pp = paragraph.upper()
 pp=pp.replace('GRAPHQL','graphql')
@@ -22,18 +22,14 @@ print(pp.swapcase())
 
 # Q3: 印出這個段落有多少個英文單字(不含標點符號與空白)
 print('-----A3-----')
-b = paragraph.count(' ')
-c = paragraph.count(',')
-d = paragraph.count('\'')
-print(a - b - c - d )
+b = paragraph.split()
+c = len(b)
+print(c)
 
 
 # Q4: x = 1, y = 6, 把兩個變數的值交換, 讓他變成 x = 6, y = 1, 只能使用加減乘除, 不能使用第三個變數
 print('-----A4-----')
-x = 1
+x = 2
 y = 6
-
-x = x + 5
-y = y - 5
-print(x)
-print(y)
+x, y = ((x + y) - x, (x + y) - y)
+print(x, y)
