@@ -6,7 +6,7 @@ In REST, any request might end up causing some side-effects on the server, but b
 Just like in queries, if the mutation field returns an object type, you can ask for nested fields. This can be useful for fetching the new state of an object after an update.
 '''
 
-#print(paragraph)
+print(paragraph)
 
 # Q1: 印出這個段落的長度
 print('-----A1-----')
@@ -19,12 +19,18 @@ print('-----A2-----')
 pp = paragraph.upper()
 pp=pp.replace('GRAPHQL','graphql')
 print(pp.swapcase())
+# 解答：
+#     str = 'GraphQL'
+#     print (paragraph.lower().replace((str.lower()), str.upper()))
 
 # Q3: 印出這個段落有多少個英文單字(不含標點符號與空白)
 print('-----A3-----')
 b = paragraph.split()
 c = len(b)
 print(c)
+# 解答：
+#     print(len(paragraph.split()))
+
 
 
 # Q4: x = 1, y = 6, 把兩個變數的值交換, 讓他變成 x = 6, y = 1, 只能使用加減乘除, 不能使用第三個變數
